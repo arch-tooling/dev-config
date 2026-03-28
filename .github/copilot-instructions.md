@@ -8,6 +8,17 @@
 
 ---
 
+## 0. Personal Planning Context
+
+Before starting any session, check `.alex-copilot/context/` for current planning context:
+- `priorities.md` -- current week's priorities and key dates
+- `commitments.md` -- external commitments and delivery status
+- `patterns.md` -- work patterns and reminders
+
+When completing tasks, note any items relevant to weekly commitments or tracking in `.alex-copilot/sync/out/` so the planning layer stays current.
+
+---
+
 ##  Mandatory Standards for All Documentation
 
 ### 1. Mermaid Diagram Generation Pattern

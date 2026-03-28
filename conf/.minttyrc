@@ -1,0 +1,36 @@
+# ./mintty
+#
+Columns = 170
+Rows = 40
+# Font = Consolas
+FontHeight = 14
+Locale = en_US
+Charset = UTF-8
+Transparency = off
+BoldAsFont = no
+BoldAsColour = yes
+FontSmoothing = default
+# Term = xterm-256color
+
+# ForegroundColour = 210, 210, 210
+# BackgroundColour =  20,  20,  20
+# CursorColour     = 255, 175,   0
+# IMECursorColour  = 128, 224, 160
+# Black            =  40,  40,  40
+# BoldBlack        =   0,   0,   0
+# Red              = 220, 135, 135
+# BoldRed          = 255, 135, 135
+# Green            = 175, 220, 135
+# BoldGreen        = 175, 255, 135
+# Yellow           = 220, 220, 175
+# BoldYellow       = 255, 255, 175
+# Blue             = 135, 175, 220
+# BoldBlue         = 135, 175, 255
+# Magenta          = 220, 175, 220
+# BoldMagenta      = 255, 175, 255
+# Cyan             = 175, 220, 220
+# BoldCyan         = 175, 255, 255
+# White            = 210, 210, 210
+# BoldWhite        = 230, 230, 230
+
+# EOF

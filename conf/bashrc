@@ -1,0 +1,87 @@
+D
+#
+# bashrc
+#
+# add to ~/.bashrc the following,
+# BASH_CONF=/c/Users/$USERNAME/src//alex/conf/bashrc
+# echo Sourcing ${BASH_CONF}
+# source ${BASH_CONF}
+
+alias curl=/c/Windows/System32/curl.exe
+alias rm='rm -i'
+alias grep='grep --color'
+alias ll='ls -la'
+alias h='history'
+alias vi='vim'
+alias cloc='/c/opt/tools/cloc/cloc-1.64.exe'
+
+
+# JAVA
+# chaos
+JAVA_HOME_UNIX_11=/c/opt/Java/AmazonCorretto11/jdk11.0.3_7
+# ALK-LT
+JAVA_HOME_25="c:\Program Files\Amazon Corretto\jdk25.0.2_10"
+JAVA_HOME_UNIX_25="$(cygpath -u "$JAVA_HOME_25")"
+
+JAVA_HOME_21="c:\Program Files\Amazon Corretto\jdk21.0.9_10"
+JAVA_HOME_UNIX_21="$(cygpath -u "$JAVA_HOME_21")"
+# alk-lt
+JAVA_HOME_UNIX_11=/c/opt/java/AmazonCorretto/jdk11.0.14_10
+JAVA_HOME_UNIX_11=/c/opt/AmazonCorretto/jdk17.0.5_8
+export JAVA_HOME_11=$(cygpath -d $JAVA_HOME_UNIX_11)
+
+
+# JAVA_HOME_UNIX_8=/c/opt/Java/AmazonCorretto8/jdk1.8.0_262
+# export JAVA_HOME_8=$(cygpath -d $JAVA_HOME_UNIX_8)
+
+#JAVA_HOME_UNIX=$JAVA_HOME_UNIX_8
+#export JAVA_HOME=$JAVA_HOME_8
+JAVA_HOME_UNIX=$JAVA_HOME_UNIX_21
+export JAVA_HOME=$JAVA_HOME_21
+
+# MAVEN
+# chaos
+M2_HOME_UNIX=/c/opt/maven/apache-maven-3.5.2
+# alk-lt
+M2_HOME_UNIX=/c/opt/maven/apache-maven-3.8.5
+M2_HOME_UNIX=/c/opt/maven/apache-maven-3.9.12
+export M2_HOME=$(cygpath -d $M2_HOME_UNIX)
+
+# AWS
+export AWS_PATH=/c/opt/Amazon/AWSCLIV2
+export AWS_HOME=/c/Users/alex/src/alex/conf/
+
+# subversion
+#SVN_PATH=/opt/TortoiseSVN/bin
+
+# oracle Oracle ORACLE
+#ORACLE_BASE=/c/app/lc43486/product/12.1.0
+#ORACLE_DB_BASE=$ORACLE_DB_BASE/dbhome_1
+#export ORACLE_BIN=$ORACLE_DB_BASE/BIN
+
+# PYTHON
+#PY_PATHS=/c/opt/Python/Python35:/c/opt/Python/Python35/Scripts:/c/opt/Python/Python35/Tools/scripts
+#export PATH=~/bin:$JAVA_HOME_UNIX/bin:$M2_HOME_UNIX/bin:$SVN_PATH:${PY_PATHS}:"$PATH"
+#PY_PATH=/c/opt/py/Python38-32
+# chaos
+PY_PATH=/c/Python39
+# alk-lt
+PY_PATH=/c/opt/Python/Python310
+
+DOCKER_BIN="c:\Program Files\Docker\Docker\resources\bin"
+DOCKER_BIN_UNIX="$(cygpath -u "$DOCKER_BIN")"
+
+NODE_PATH=/c/opt/nodejs:/c/Users/alk/AppData/Roaming/npm
+VS_CODE_PATH=/c/Users/alk/AppData/Local/Programs/MICROS~1
+
+export PATH=~/src/alex/src/main/scripts:$JAVA_HOME_UNIX/bin:$M2_HOME_UNIX/bin:${AWS_HOME}:${PY_PATH}:/c/Users/ALK/bin:/usr/bin:/usr/local/bin:${DOCKER_BIN_UNIX}:${NODE_PATH}:${VS_CODE_PATH}:${AWS_PATH}:/usr/bin:/c/WINDOWS/system32
+
+#gvim() {
+#  /c/opt/Vim/vim80/vim80/gvim "$*" &
+#}
+
+# chaos
+# cd /d/Users/alex/src/gga
+cd /c/Users/${USERNAME}/src/gga
+
+# EOF
